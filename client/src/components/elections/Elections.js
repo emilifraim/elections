@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { submitElection } from '../../actions/electionActions';
 import Spinner from '../common/Spinner';
 import ElectionInfo from './ElectionInfo';
+import ElectionInfoEmpty from './ElectionInfoEmpty';
+
 import ElectionForm from './ElectionForm';
 
 class Elections extends Component {
@@ -94,8 +96,8 @@ class Elections extends Component {
 					onSubmit={this.onSubmit}
 				/>
 			);
-		} else if (election === null || loading || Object.keys(election).length === 0) {
-			electiontContent = <Spinner />;
+		} else if (election === null) {
+			electiontContent = <ElectionInfoEmpty />;
 		} else {
 			electiontContent = <ElectionInfo election={election} userData={userData} />;
 		}

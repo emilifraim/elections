@@ -24,6 +24,7 @@ router.post('/', (req, res) => {
 		axios
 			.get(url, axiosConfig)
 			.then((response) => {
+				// console.log('response.data[0] ****************** ', response.data[0]);
 				return res.json([ response.data[0], data ]);
 			})
 			.catch((error) => {
