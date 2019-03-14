@@ -10,11 +10,11 @@ class Elections extends Component {
 	constructor() {
 		super();
 		this.state = {
-			street: 'lasdfsd',
-			street2: 'sdfsdfd',
-			city: 'augusta',
-			state: 'MO',
-			zip: '32232',
+			street: '',
+			street2: '',
+			city: '',
+			state: '',
+			zip: '',
 			errors: {},
 			isSubmitted: false
 		};
