@@ -1,0 +1,225 @@
+body,
+html {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.headerBG {
+	background-color: #fff !important;
+}
+
+.navbar {
+	padding-bottom: 5px;
+	border-bottom: 5px solid #01aac5;
+}
+
+.nav-link {
+	color: #01aac5;
+}
+
+.navbar-brand {
+	color: #01aac5;
+}
+
+.footer {
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+.footer-copyright {
+	color: #01aac5 !important;
+}
+
+.fade-in {
+	-webkit-animation: fadeIn 1s 1; /* Safari 4+ */
+	-moz-animation: fadeIn 1s 1; /* Fx 5+ */
+	animation: fadeIn 1s 1; /* IE 10+, Fx 29+ */
+}
+
+.loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #e37262;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	margin: 50px auto;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.election-container {
+	min-height: 100%;
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	background-color: #01aac5;
+}
+.election-card-bg {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background-color: #0186aa !important;
+	/* background-color: #01aac5 !important; */
+	border-radius: 0 !important;
+	border: none;
+}
+
+.election-card-title {
+	color: #fff;
+}
+
+.election-card-text-1 {
+	color: #b9c9da;
+	font-size: 18px;
+	padding: 0 25px;
+}
+
+input[type=text] {
+	background-color: #fff;
+	color: #000;
+}
+
+input[type=text]:focus {
+	background-color: #01aac5;
+	color: #fff;
+}
+
+.custom-btn {
+	background-color: #fff;
+
+	color: #e37262;
+	font-weight: 600;
+	border: 2px solid #e37262;
+	border-radius: 0;
+	padding: 10px;
+}
+
+.custom-btn:hover {
+	background-color: #e37262;
+
+	color: #ffffff;
+}
+
+.pfblock-line {
+	background-color: #e37262;
+	width: 100px;
+	height: 5px;
+	margin: 20px auto;
+}
+
+.election-info-card-bg {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background-color: #fff !important;
+	border-radius: 0 !important;
+	border: none;
+}
+
+.register-info-card-title {
+	color: #01aac5;
+}
+
+.info-text-1 {
+	font-weight: 800;
+	color: #06475b;
+}
+
+.info-text-1 > span {
+	margin-left: 10px;
+	font-weight: 400;
+	color: #06475b;
+}
+
+ul > .district-divisions {
+	font-weight: 800;
+	color: #06475b;
+}
+
+ul > .district-divisions > span {
+	margin-left: 10px;
+	font-weight: 400;
+	color: #06475b;
+}
+
+ul > .voting-methods {
+	font-weight: 800;
+	color: #06475b;
+}
+
+ul > .voting-methods > span {
+	margin-left: 10px;
+	font-weight: 400;
+	color: #06475b;
+}
+
+ul > .voter-registration-methods {
+	font-weight: 800;
+	color: #06475b;
+}
+
+ul > .voter-registration-methods > span {
+	margin-left: 10px;
+	font-weight: 400;
+	color: #06475b;
+}
+
+.district-divisions-title {
+	color: #01aac5;
+	text-decoration: underline #e37262;
+}
+
+.pfblock-line-2 {
+	background-color: #e37262;
+	width: 100px;
+	height: 5px;
+	margin-top: 10px;
+}
+.custom-label {
+	color: #fff;
+}
