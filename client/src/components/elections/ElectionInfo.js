@@ -65,22 +65,18 @@ class ElectionInfo extends Component {
 										)}
 									</span>
 								</li>
-								{/* {method.instructions !== undefined ? (
+								{method.instructions !== undefined ? (
 									<li className="voting-methods">
-										instructions: <span>{method.instructions['voting-id']}</span>
+										voting-id:{' '}
+										{method.instructions['voting-id'] !== undefined ? (
+											<span>{method.instructions['voting-id']}</span>
+										) : (
+											<span>N/A</span>
+										)}
 									</li>
 								) : (
 									<li className="voting-methods">
 										instructions: <span>N/A</span>
-									</li>
-								)} */}
-								{method.instructions['voting-id'] !== undefined ? (
-									<li className="voting-methods">
-										voting-id: <span>{method.instructions['voting-id']}</span>
-									</li>
-								) : (
-									<li className="voting-methods">
-										voting-id: <span>N/A</span>
 									</li>
 								)}
 							</ul>
@@ -128,32 +124,38 @@ class ElectionInfo extends Component {
 									url: <span>{regMethod['url'] !== undefined ? regMethod['url'] : 'N/A '}</span>
 								</li>
 
-								{regMethod.instructions['signature'] !== undefined ? (
-									<li className="voter-registration-methods">
-										signature: <span>{regMethod.instructions['signature']}</span>
-									</li>
-								) : (
-									<li className="voter-registration-methods">
-										signature: <span>N/A</span>
-									</li>
-								)}
+								{regMethod.instructions !== undefined ? (
+									<div>
+										<li className="voter-registration-methods">
+											signature:
+											{regMethod.instructions['signature'] !== undefined ? (
+												<span>{regMethod.instructions['signature']}</span>
+											) : (
+												<span>N/A</span>
+											)}
+										</li>
 
-								{regMethod.instructions['registration'] !== undefined ? (
-									<li className="voter-registration-methods">
-										registration: <span>{regMethod.instructions['registration']}</span>
-									</li>
+										<li className="voter-registration-methods">
+											registration:
+											{regMethod.instructions['registration'] !== undefined ? (
+												<span>{regMethod.instructions['registration']}</span>
+											) : (
+												<span>N/A</span>
+											)}
+										</li>
+
+										<li className="voter-registration-methods">
+											idnumber:
+											{regMethod.instructions['idnumber'] !== undefined ? (
+												<span>{regMethod.instructions['idnumber']}</span>
+											) : (
+												<span>N/A</span>
+											)}
+										</li>
+									</div>
 								) : (
 									<li className="voter-registration-methods">
-										registration: <span>N/A</span>
-									</li>
-								)}
-								{regMethod.instructions['idnumber'] !== undefined ? (
-									<li className="voter-registration-methods">
-										idnumber: <span>{regMethod.instructions['idnumber']}</span>
-									</li>
-								) : (
-									<li className="voter-registration-methods">
-										idnumber: <span>N/A</span>
+										instructions: <span>N/A</span>
 									</li>
 								)}
 							</ul>
